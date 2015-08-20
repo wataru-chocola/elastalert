@@ -4,14 +4,14 @@ import logging
 from collections import deque
 
 from elasticsearch.client import Elasticsearch
-from util import dt_to_ts
-from util import EAException
-from util import format_index
-from util import hashable
-from util import lookup_es_key
-from util import pretty_ts
-from util import ts_now
-from util import ts_to_dt
+from elastalert.util import dt_to_ts
+from elastalert.util import EAException
+from elastalert.util import format_index
+from elastalert.util import hashable
+from elastalert.util import lookup_es_key
+from elastalert.util import pretty_ts
+from elastalert.util import ts_now
+from elastalert.util import ts_to_dt
 
 
 class RuleType(object):

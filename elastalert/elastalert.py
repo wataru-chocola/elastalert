@@ -12,23 +12,23 @@ from smtplib import SMTPException
 from socket import error
 
 import argparse
-import kibana
-from alerts import DebugAlerter
-from config import get_rule_hashes
-from config import load_configuration
-from config import load_rules
+import elastalert.kibana as kibana
+from elastalert.alerts import DebugAlerter
+from elastalert.config import get_rule_hashes
+from elastalert.config import load_configuration
+from elastalert.config import load_rules
 from elasticsearch.client import Elasticsearch
 from elasticsearch.exceptions import ElasticsearchException
-from enhancements import DropMatchException
-from util import dt_to_ts
-from util import EAException
-from util import format_index
-from util import pretty_ts
-from util import seconds
-from util import ts_add
-from util import ts_now
-from util import ts_to_dt
-from util import lookup_es_key
+from elastalert.enhancements import DropMatchException
+from elastalert.util import dt_to_ts
+from elastalert.util import EAException
+from elastalert.util import format_index
+from elastalert.util import pretty_ts
+from elastalert.util import seconds
+from elastalert.util import ts_add
+from elastalert.util import ts_now
+from elastalert.util import ts_to_dt
+from elastalert.util import lookup_es_key
 
 
 class ElastAlerter():

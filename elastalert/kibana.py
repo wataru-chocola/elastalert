@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import urllib
 
-from util import EAException
+from elastalert.util import EAException
 
 
 dashboard_temp = {'editable': True,

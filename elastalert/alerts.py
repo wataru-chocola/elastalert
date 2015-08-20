@@ -11,12 +11,12 @@ from smtplib import SMTPException
 from socket import error
 
 import simplejson
-from jira.client import JIRA
-from jira.exceptions import JIRAError
+from elastalert.jira.client import JIRA
+from elastalert.jira.exceptions import JIRAError
 from staticconf.loader import yaml_loader
-from util import EAException
-from util import lookup_es_key
-from util import pretty_ts
+from elastalert.util import EAException
+from elastalert.util import lookup_es_key
+from elastalert.util import pretty_ts
 
 
 class BasicMatchString(object):

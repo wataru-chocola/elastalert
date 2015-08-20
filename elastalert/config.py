@@ -4,20 +4,20 @@ import hashlib
 import logging
 import os
 
-import alerts
-import enhancements
+import elastalert.alerts as alerts
+import elastalert.enhancements as enhancements
 import jsonschema
-import ruletypes
+import elastalert.ruletypes as ruletypes
 import yaml
 import yaml.scanner
 from staticconf.loader import yaml_loader
-from util import dt_to_ts
-from util import dt_to_unix
-from util import dt_to_unixms
-from util import EAException
-from util import ts_to_dt
-from util import unix_to_dt
-from util import unixms_to_dt
+from elastalert.util import dt_to_ts
+from elastalert.util import dt_to_unix
+from elastalert.util import dt_to_unixms
+from elastalert.util import EAException
+from elastalert.util import ts_to_dt
+from elastalert.util import unix_to_dt
+from elastalert.util import unixms_to_dt
 
 
 # schema for rule yaml
